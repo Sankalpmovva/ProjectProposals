@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ram Sankalp M - Project Proposals</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .tab-button {
+      background: none;
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .tab-button.active {
+      border-bottom: 3px solid #007BFF;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .proposal {
+      display: none;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .proposal.active {
+      display: block;
+    }
+
+    h2 {
+      color: #ff0000;
+      margin-bottom: 0.3rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: #333;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Project Proposals — Ram Sankalp Movva</h1>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-button active" data-target="proposal1">Proposal 1</button>
+    <button class="tab-button" data-target="proposal2">Proposal 2</button>
+  </div>
+
+    <section id="proposal1" class="proposal active">
+    <h2>MovieMate 🎥</h2>
+    <p>A unified movie booking platform that aggregates showtimes from multiple Belgian theatres, letting users easily browse, book, and review movies in one place.</p>
+
+    <h3>Problem & Target Audience</h3>
+    <p>
+        Moviegoers in Belgium often need to visit different cinema websites like Kinepolis and UGC to find showtimes and compare options. 
+       <strong>MovieMate</strong> simplifies this by displaying all theatre schedules on one platform. It’s designed for movie lovers who want a convenient, secure, and 
+        modern way to explore movies and book tickets online.
+    </p>
+
+    <!-- <h3>Technologies Used</h3>
+    <ul>
+        <li><strong>Frontend:</strong> Vue.js (component-based UI, routing, Tailwind for styling)</li>
+        <li><strong>Backend:</strong> Express.js on Node.js (REST API with authentication, validation, and error handling)</li>
+        <li><strong>Database:</strong> MySQL (storing users, movies, showtimes, and bookings)</li>
+        <li><strong>APIs:</strong> TMDb API (movie data), YouTube API (trailers)</li>
+        <li><strong>Automation:</strong> n8n or Zapier (email confirmations, daily syncs, review reminders)</li>
+    </ul> -->
+
+    <h3>Core Features</h3>
+    <ul>
+        <li><strong>User Registration & Login:</strong> Secure authentication and optional Google OAuth.</li>
+        <li><strong>Profile Management:</strong> Update profile info, view booking history, and save favorite movies.</li>
+        <li><strong>Movie Discovery:</strong> Fetch and display movies from <em>TMDb API</em> with posters, genres, ratings, and trailers.</li>
+        <li><strong>Unified Showtimes:</strong> Display showtimes from multiple Belgian theatres in one interface.</li>
+        <li><strong>Booking System:</strong> Select movie, theatre, and time; confirm booking with a simulated payment system.</li>
+        <li><strong>Admin Dashboard:</strong> CRUD management of theatres, movies, showtimes, users, and bookings.</li>
+        <li><strong>Map Integration:</strong> Show theatre locations on Google Maps.</li>
+        <li><strong>Seat Selection:</strong> Interactive seat map with live seat availability.</li>
+        <li><strong>Ratings & Reviews:</strong> Users can review movies and theatres after viewing.</li>
+        <li><strong>Automated Emails:</strong> Booking confirmations and reminders via n8n or Zapier.</li>
+    </ul>
+
+    <!-- <h3>Nice-to-Have</h3>
+    <ul>
+        <li><strong>Map Integration:</strong> Show theatre locations on Google Maps or Leaflet.</li>
+        <li><strong>Seat Selection:</strong> Interactive seat map with live seat availability.</li>
+        <li><strong>Ratings & Reviews:</strong> Users can review movies and theatres after viewing.</li>
+        <li><strong>Automated Emails:</strong> Booking confirmations and reminders via n8n or Zapier.</li>
+        <li><strong>Recommendations Engine:</strong> Suggest similar movies based on viewing history.</li>
+        <li><strong>Admin Analytics:</strong> Dashboard showing total users, bookings, and revenue.</li>
+        <li><strong>Responsive UI:</strong> Optimized design for mobile and desktop using Tailwind CSS.</li>
+    </ul> -->
+
+    <!-- <h3>Automation Flow</h3>
+    <ul>
+        <li><strong>Booking Confirmation:</strong> Send an email after each booking with movie and theatre details.</li>
+        <li><strong>Daily Movie Sync:</strong> Automatically fetch new “Now Showing” movies from TMDb API every 24 hours.</li>
+        <li><strong>Review Reminder:</strong> Email users after their showtime to request a review.</li>
+        <li><strong>Admin Notifications:</strong> Notify admin when a new booking or review is added.</li>
+    </ul> -->
+    </section>
+
+
+  <section id="proposal2" class="proposal">
+    <h2>StudyBuddy 📚</h2>
+    <p>A smart web app that helps students organize study schedules, set goals, and track progress — all in one place.</p>
+
+    <h3>Problem & Target Audience</h3>
+    <p>Students often struggle to manage multiple subjects, deadlines, and study goals. StudyBuddy simplifies academic planning by allowing students to schedule study sessions, monitor progress, and stay motivated through reminders and analytics. It’s designed for university and high school students who want to manage their time more effectively and improve productivity.</p>
+
+    <h3>Core Features</h3>
+    <ul>
+      <li><strong>User Registration & Login:</strong> Secure authentication for personalized dashboards.</li>
+      <li><strong>Profile Management:</strong> Update user info and view overall study stats.</li>
+      <li><strong>Task Management:</strong> Add, edit, and delete study tasks with subject, duration, and deadlines.</li>
+      <li><strong>Study Dashboard:</strong> View daily and weekly study schedules at a glance.</li>
+      <li>><strong>Progress Tracking:</strong> Track completed sessions and visualize performance.</li>
+      <li><strong>Analytics Dashboard:</strong> Display charts showing time spent per subject and goal completion.</li>
+      <li><strong>Pomodoro Timer:</strong> Built-in focus timer to manage study intervals.</li>
+      <li><strong>Motivational Quotes API:</strong> Fetch and display daily motivational quotes.</li>
+      <li><strong>Admin Dashboard:</strong> CRUD management of users, subjects, and tasks.</li>
+      <li><strong>Reminders:</strong> Automated study reminders via email (optional using n8n or Zapier).</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    <p>Web Programming Project Proposals</p>
+  </footer>
+
+  <script>
+   
+    const buttons = document.querySelectorAll('.tab-button');
+    const proposals = document.querySelectorAll('.proposal');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        proposals.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
